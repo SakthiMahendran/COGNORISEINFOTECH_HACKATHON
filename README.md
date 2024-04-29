@@ -1,29 +1,33 @@
-"# COGNORISEINFOTECH_HACKATHON" 
+# COGNORISEINFOTECH_HACKATHON
 
-Developed in MLOps structure
-    - DataAnalysis
-    - DataPreProcessing
-    - ModelSelection
-    - ModelTraining
+## Developed in MLOps Structure
 
-Selected Model - "RandomForest"
+- DataAnalysis
+- DataPreProcessing
+- ModelSelection
+- ModelTraining
 
-**Justification:**
-    The top performing Models are 
-        - RandomForest
-        - DecisionTree
-        - GradientBoostingClassifier
+**Selected Model - "RandomForest"**
 
-**RandomForest vs DecisionTree** 
-    At the end of the "RandomForest" is just a stack of "DecisionTree".... So it makes sense to use RandomForest over DecisionTree
-    
-**RandomForest vs GradientBoostingClassifier**
-    Even though GradientBoostingClassifier is a good performing it is not good as RandomForest
-    
-**Possibility of overfitting**
-    The RandomForest gave %100 accuracy on which is a sign of overfitting... though it is though to say check whether the 
-    model is overfitted or not without a validation dataset I considered the below factors to choose RandomForest
+### Justification:
 
-        - Ensemble methods are generally resistant to overfitting
-        - I tried by splitting the train data for both training and testing... Where the RandomForest didn't give 100% accuracy
-        but though it performed better than other models 
+The top-performing Models are:
+
+- RandomForest
+- DecisionTree
+- GradientBoostingClassifier
+
+#### RandomForest vs DecisionTree
+
+At the end of the day, RandomForest is just a stack of DecisionTree models. Therefore, it makes sense to use RandomForest over DecisionTree.
+
+#### RandomForest vs GradientBoostingClassifier
+
+Even though GradientBoostingClassifier performs well, it is not as good as RandomForest.
+
+#### Possibility of Overfitting
+
+The RandomForest achieved 100% accuracy, which could indicate overfitting. It is challenging to confirm without a validation dataset. Considered factors for choosing RandomForest:
+
+- Ensemble methods are generally resistant to overfitting.
+- Experimented with splitting the training data for both training and testing. RandomForest didn't achieve 100% accuracy but performed better than other models.
